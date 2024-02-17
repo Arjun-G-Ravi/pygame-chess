@@ -53,12 +53,9 @@ class Chess(object):
         # clear moves lists
         self.moves = []
 
-        # randomize player turn
-        x = random.randint(0, 1)
-        if(x == 1):
-            self.turn["black"] = 1
-        elif(x == 0):
-            self.turn["white"] = 1
+        # white moves first
+        x = 1
+        self.turn["white"] = 1
 
         # two dimensonal dictionary containing details about each board location
         # storage format is [piece_name, currently_selected, x_y_coordinate]
