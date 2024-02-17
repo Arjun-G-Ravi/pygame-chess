@@ -105,7 +105,6 @@ class Chess(object):
                 x = x - 1
 
 
-    # 
     def play_turn(self):
         # white color
         white_color = (255, 255, 255)
